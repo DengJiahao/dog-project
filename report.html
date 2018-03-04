@@ -13375,6 +13375,7 @@ We detected 12.0% human faces in the dog_files_short data.
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 2:</strong> This algorithmic choice necessitates that we communicate to the user that we accept human images only when they provide a clear view of a face (otherwise, we risk having unneccessarily frustrated users!). In your opinion, is this a reasonable expectation to pose on the user? If not, can you think of a way to detect humans in images that does not necessitate an image with a clearly presented face?</p>
 <p><strong>Answer:</strong></p>
+<p>I don't agree that a clearly presented face is needed. I mean the picture needed to be clear for sure; but there do not have to be a whole face. For example, if there is a partial face, human eyes can also recognize this picture as a human face. Some features must have been used such as the presense of eyes, human skin, hair, etc. For example, if we recognize eyes and hair along with human skin in the picture, we can predict it to be a human face.</p>
 <p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.  If you decide to pursue this <em>optional</em> task, report performance on each of the datasets.</p>
 
 </div>
